@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Op de Haak</title>
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <a href="ww.opdehaak.html">Vis Haak</a>
+            </div>
+            <div class="title">Op de Haak</div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="producten.html">Producten</a></li>
+                </ul>
+            </nav>
+            <div class="cart">
+                <a href="winkelmandje.html">WinkelMandje</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Contact sectie -->
+    <section class="contact-section">
+        <div class="container">
+            <h2>Contactinformatie</h2>
+
+            <div class="contact-info">
+                <p><strong>E-mail:</strong> opdehaak@gmail.com</p>
+                <p><strong>Telefoon:</strong> 06-12345678</p>
+                <p><strong>Adres:</strong> Hoofdstraat 10, 1234 AB, Amsterdam</p>
+                <p><strong>Openingstijden:</strong> Ma-Vr 09:00 - 18:00</p>
+            </div>
+
+            <h2>Stuur ons een bericht</h2>
+            <form class="contact-form" id="contactForm">
+               <a class="bricht" href="https://docs.google.com/forms/d/1wHdjtuC5t1DzuEhr1qkOEavzdg3QvPeXvSZIqfNFYck/edit">Klik om de bricht te schrijven</a>
+                <p class="success-message" id="successMessage"></p>
+            </form>
+        </div>
+    </section>
+
+<script>
+const contactForm = document.getElementById('contactForm');
+const successMessage = document.getElementById('successMessage');
+
+contactForm.addEventListener('submit', function(e) {
+    e.preventDefault();
+    successMessage.innerText = "Bedankt voor je bericht! We nemen zo snel mogelijk contact met je op.";
+    contactForm.reset();
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Winkelmandje - Op de Haak</title>
+    <link rel="stylesheet" href="winkelmandje.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <a href="ww.opdehaak.html">Vis Haak</a>
+            </div>
+            <div class="title">Op de Haak</div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="producten.html">Producten</a></li>
+                </ul>
+            </nav>
+            <div class="cart">
+                <a href="winkelmandje.html">WinkelMandje</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Winkelmandje -->
+    <section class="cart-section">
+        <div class="container">
+            <div class="cart-container">
+                <!-- Producten worden hier via JS toegevoegd -->
+            </div>
+
+            <div class="cart-summary">
+                <h2>Totaal: €0</h2>
+                <a href="afrekenen.html"><button class="checkout-btn">Afrekenen</button></a>
+            </div>
+        </div>
+    </section>
+
+<script>
+const cartContainer = document.querySelector('.cart-container');
+const totalEl = document.querySelector('.cart-summary h2');
+
+function renderCart() {
+    cartContainer.innerHTML = '';
+    const cart = JSON.parse(localStorage.getItem('cart')) || [];
+    let total = 0;
+
+    cart.forEach(item => {
+        total += item.price * item.quantity;
+
+        const cartItem = document.createElement('div');
+        cartItem.classList.add('cart-item');
+
+        cartItem.innerHTML = `
+            <div class="cart-image">
+                <img src="${item.image}" alt="${item.title}">
+            </div>
+            <div class="cart-info">
+                <h3>${item.title}</h3>
+                <p>Prijs: €${item.price}</p>
+                <p>Aantal: <input type="number" class="quantity" value="${item.quantity}" min="1" data-id="${item.id}"></p>
+                <button class="remove-btn" data-id="${item.id}">Verwijderen</button>
+            </div>
+        `;
+        cartContainer.appendChild(cartItem);
+    });
+
+    totalEl.innerText = `Totaal: €${total}`;
+    addCartEvents();
+}
+
+function addCartEvents() {
+    const removeButtons = document.querySelectorAll('.remove-btn');
+    const quantityInputs = document.querySelectorAll('.quantity');
+
+    removeButtons.forEach(btn => {
+        btn.addEventListener('click', () => {
+            let cart = JSON.parse(localStorage.getItem('cart')) || [];
+            cart = cart.filter(item => item.id !== btn.dataset.id);
+            localStorage.setItem('cart', JSON.stringify(cart));
+            renderCart();
+        });
+    });
+
+    quantityInputs.forEach(input => {
+        input.addEventListener('change', () => {
+            const id = input.dataset.id;
+            const quantity = parseInt(input.value);
+            let cart = JSON.parse(localStorage.getItem('cart')) || [];
+            const product = cart.find(item => item.id === id);
+            if(product){
+                product.quantity = quantity;
+            }
+            localStorage.setItem('cart', JSON.stringify(cart));
+            renderCart();
+        });
+    });
+}
+
+renderCart();
+</script>
+</body>
+</html>
+
+

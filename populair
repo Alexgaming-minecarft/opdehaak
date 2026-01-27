@@ -1,0 +1,79 @@
+<section class="products">
+      <h2 class="section-title">Populaire Producten</h2>
+        <p class="section-subtitle">Provenciale producten</p>
+    <div class="container">
+        <div class="products-container">
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="https://www.tackleshop.nl/products/tn1/Gamakatsu-BKS-PowerCarp-Barbless-Hook-H006-31670.jpg" alt="Vis haakje">
+                    <span class="product-label sale">-50%</span>
+                </div>
+                <div class="product-info">
+                    <h3 class="product-title">Haakje nummer 9</h3>
+                    <p class="product-description">
+                        Dit is een heel sterk haakje.
+                    </p>
+                    <div class="product-price">
+                        <span class="old-price">€50 euro</span>
+                        <span class="price">€30 euro</span>
+                    </div>
+                    <button class="add-to-cart">Toevoegen aan winkelmandje</button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="https://www.tackleshop.nl/products/tn1/Gamakatsu-BKS-PowerCarp-Barbless-Hook-H006-31670.jpg" alt="Vis haakje">
+                    <span class="product-label sale">-50%</span>
+                </div>
+                <div class="product-info">
+                    <h3 class="product-title">Haakje nummer 9</h3>
+                    <p class="product-description">
+                        Dit is een heel sterk haakje.
+                    </p>
+                    <div class="product-price">
+                        <span class="old-price">€50 euro</span>
+                        <span class="price">€30 euro</span>
+                    </div>
+                    <button class="add-to-cart">Toevoegen aan winkelmandje</button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="https://www.tackleshop.nl/products/tn1/Gamakatsu-BKS-PowerCarp-Barbless-Hook-H006-31670.jpg" alt="Vis haakje">
+                    <span class="product-label sale">-50%</span>
+                </div>
+                <div class="product-info">
+                    <h3 class="product-title">Haakje nummer 9</h3>
+                    <p class="product-description">
+                        Dit is een heel sterk haakje.
+                    </p>
+                    <div class="product-price">
+                        <span class="old-price">€50 euro</span>
+                        <span class="price">€30 euro</span>
+                    </div>
+                    <button class="add-to-cart">Toevoegen aan winkelmandje</button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="https://www.tackleshop.nl/products/tn1/Gamakatsu-BKS-PowerCarp-Barbless-Hook-H006-31670.jpg" alt="Vis haakje">
+                    <span class="product-label sale">-50%</span>
+                </div>
+                <div class="product-info">
+                    <h3 class="product-title">Haakje nummer 9</h3>
+                    <p class="product-description">
+                        Dit is een heel sterk haakje.
+                    </p>
+                    <div class="product-price">
+                        <span class="old-price">€50 euro</span>
+                        <span class="price">€30 euro</span>
+                    </div>
+                    <button class="add-to-cart">Toevoegen aan winkelmandje</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

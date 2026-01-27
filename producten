@@ -1,0 +1,68 @@
+                <!-- Product 1 -->
+                <div class="product-card" data-category="vishengel">
+                    <div class="product-image">
+                        <img src="https://cdn.pixabay.com/photo/2017/07/31/11/21/fishing-2567682_960_720.jpg" alt="Vishengel">
+                        <span class="product-label sale">-20%</span>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Vishengel XL</h3>
+                        <p class="product-description">Sterke en lange vishengel voor grote vissen.</p>
+                        <div class="product-price">
+                            <span class="old-price">€80</span>
+                            <span class="price">€64</span>
+                        </div>
+                        <button class="add-to-cart" 
+                            data-id="1" 
+                            data-title="Vishengel XL" 
+                            data-price="64" 
+                            data-image="https://cdn.pixabay.com/photo/2017/07/31/11/21/fishing-2567682_960_720.jpg">
+                            Toevoegen aan winkelmandje
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="product-card" data-category="vishengellijn">
+                    <div class="product-image">
+                        <img src="https://cdn.pixabay.com/photo/2016/10/13/09/06/fishing-1736733_960_720.jpg" alt="Vishengellijn">
+                        <span class="product-label sale">-30%</span>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Sterke Vishengellijn</h3>
+                        <p class="product-description">Onbreekbare lijn voor de grootste vangsten.</p>
+                        <div class="product-price">
+                            <span class="old-price">€40</span>
+                            <span class="price">€28</span>
+                        </div>
+                        <button class="add-to-cart" 
+                            data-id="2" 
+                            data-title="Sterke Vishengellijn" 
+                            data-price="28" 
+                            data-image="https://cdn.pixabay.com/photo/2016/10/13/09/06/fishing-1736733_960_720.jpg">
+                            Toevoegen aan winkelmandje
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="product-card" data-category="karabijn">
+                    <div class="product-image">
+                        <img src="https://cdn.pixabay.com/photo/2017/08/07/00/50/karabiner-2595794_960_720.jpg" alt="Karabijn">
+                        <span class="product-label sale">-25%</span>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Karabijn Haak</h3>
+                        <p class="product-description">Betrouwbare karabijn voor hengel.</p>
+                        <div class="product-price">
+                            <span class="old-price">€20</span>
+                            <span class="price">€15</span>
+                        </div>
+                        <button class="add-to-cart" 
+                            data-id="3" 
+                            data-title="Karabijn Haak" 
+                            data-price="15" 
+                            data-image="https://cdn.pixabay.com/photo/2017/08/07/00/50/karabiner-2595794_960_720.jpg">
+                            Toevoegen aan winkelmandje
+                        </button>
+                    </div>
+                </div>
